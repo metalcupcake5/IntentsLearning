@@ -1,0 +1,12 @@
+[
+  {
+    "question" : "What do you do when you find a lost puppy?",
+    "answer" : "take it to a shelter, then adopt it",
+    "allAnswers" : [
+      "an answer",
+      "take it to a shelter, then adopt it",
+      "another answer",
+      " etc"
+    ]
+  }
+]

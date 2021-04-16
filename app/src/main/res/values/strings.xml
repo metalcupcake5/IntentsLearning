@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">IntentsLearning</string>
+    <string name="login_app_title">hmmm</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="log_in">Log In</string>
+    <string name="sign_up">Sign Up</string>
+</resources>
