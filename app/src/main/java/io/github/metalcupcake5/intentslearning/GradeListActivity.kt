@@ -25,40 +25,6 @@ class GradeListActivity : AppCompatActivity() {
         userId = Backendless.UserService.CurrentUser().userId
         readAllUserGrades()
 
-        /*val whereClause = "ownerId= '$userId'"
-        val queryBuilder = DataQueryBuilder.create()
-        queryBuilder.setWhereClause(whereClause)
-
-        Backendless.Data.of(Grade::class.java).find(object : AsyncCallback<List<Grade?>?> {
-            override fun handleResponse(foundGrades: List<Grade?>?) {
-                // all grade instances has been found
-
-                // get the current user's objectid
-
-
-                // make a temporary list for just our matches
-                /*val matchingList = mutableListOf<Grade?>()
-                if(foundGrades != null){
-                    for(grade in foundGrades){
-                        if(grade?.ownerId == userId){
-                            matchingList.add(grade)
-                        }
-                    }
-                }*/
-
-                /*val matchingList = foundGrades?.filter {
-                    it?.ownerId == userId
-                }*/
-                Log.d(TAG, "handleResponse: " + foundGrades.toString())
-
-            }
-
-            override fun handleFault(fault: BackendlessFault) {
-                // an error has occurred, the error code can be retrieved with fault.getCode()
-                Log.d(TAG, "handleFault: " + fault.message)
-            }
-        })*/
-
         button_gradelist_read.setOnClickListener {
             readAllUserGrades()
             Toast.makeText(this@GradeListActivity, "Grades Read", Toast.LENGTH_SHORT).show();
@@ -116,11 +82,6 @@ class GradeListActivity : AppCompatActivity() {
                 }
             })
     }
-
-    /*
-    *
-    *
-    * */
 
     private fun deleteFirstGrade(){
         if(!gradesList.isNullOrEmpty()) {
